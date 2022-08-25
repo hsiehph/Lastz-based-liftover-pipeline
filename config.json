@@ -1,0 +1,17 @@
+{
+        "tmp_dir"        : "$TMPDIR/",
+        "local_path"     : "/var/tmp/lastz/tmp_smur/",
+        "lastz_settings" : "--gfextend --gapped --step=10 --inner=1000 --notransition --format=lav --identity=90 --matchcount=20 --xdrop=20 --maxwordcount=90",
+        "target_names_file"   : "target_names.txt",
+        "query_name"    : "GRCh38_no_alt_hs38d1_phiX174.fa",
+        "query_path"     : "/net/eichler/vol27/projects/human_diversity/nobackups/Liftover_v2/",
+        "target_name"     : "PNG16_hifiasm_HiC_v2.asm.hic.hap1.p_ctg.wX.fa",
+        "target_path"     : "/net/eichler/vol27/projects/human_diversity/nobackups/Liftover_v2/",
+        "window_size"    : "1000000",
+
+        "cluster_settings" : {
+                           "heaviest" : " -l gpfsstate=0,mfree=30G -l h_rt=21:00:00:00 -q eichler-long.q ",
+                           "heavy"    : " -l gpfsstate=0,mfree=30G -l h_rt=21:00:00:00 -q eichler-long.q  ",
+                           "lite"    : " -l gpfsstate=0,mfree=10G -l h_rt=02:00:00 -q eichler-short.q  "
+        }
+}
